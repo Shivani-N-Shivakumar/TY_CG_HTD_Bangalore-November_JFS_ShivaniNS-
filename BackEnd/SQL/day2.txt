@@ -1,0 +1,185 @@
+SQL> set lines 100 pages 100
+SQL> select *
+  2  from dept
+  3  /
+
+    DEPTNO DNAME          LOC                                                                       
+---------- -------------- -------------                                                             
+        10 ACCOUNTING     NEW YORK                                                                  
+        20 RESEARCH       DALLAS                                                                    
+        30 SALES          CHICAGO                                                                   
+        40 OPERATIONS     BOSTON                                                                    
+
+SQL> select *
+  2  from emp
+  3  where deptno=10;
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM     DEPTNO               
+---------- ---------- --------- ---------- --------- ---------- ---------- ----------               
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                    10               
+      7839 KING       PRESIDENT            17-NOV-81       5000                    10               
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                    10               
+
+SQL> select empno,ename,job,sal
+  2  from emp;
+
+     EMPNO ENAME      JOB              SAL                                                          
+---------- ---------- --------- ----------                                                          
+      7369 SMITH      CLERK            800                                                          
+      7499 ALLEN      SALESMAN        1600                                                          
+      7521 WARD       SALESMAN        1250                                                          
+      7566 JONES      MANAGER         2975                                                          
+      7654 MARTIN     SALESMAN        1250                                                          
+      7698 BLAKE      MANAGER         2850                                                          
+      7782 CLARK      MANAGER         2450                                                          
+      7788 SCOTT      ANALYST         3000                                                          
+      7839 KING       PRESIDENT       5000                                                          
+      7844 TURNER     SALESMAN        1500                                                          
+      7876 ADAMS      CLERK           1100                                                          
+      7900 JAMES      CLERK            950                                                          
+      7902 FORD       ANALYST         3000                                                          
+      7934 MILLER     CLERK           1300                                                          
+
+14 rows selected.
+
+SQL> slect distinct sal
+SP2-0734: unknown command beginning "slect dist..." - rest of line ignored.
+SQL> from emp;
+SP2-0042: unknown command "from emp" - rest of line ignored.
+SQL> ed
+Wrote file afiedt.buf
+
+  1  select distinct sal
+  2* from emp
+SQL> /
+
+       SAL                                                                                          
+----------                                                                                          
+      2450                                                                                          
+      5000                                                                                          
+      1300                                                                                          
+      1250                                                                                          
+      2850                                                                                          
+      2975                                                                                          
+      1100                                                                                          
+      3000                                                                                          
+       800                                                                                          
+      1600                                                                                          
+      1500                                                                                          
+       950                                                                                          
+
+12 rows selected.
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  select distinct sal,empno
+  2* from emp
+SQL> /
+
+       SAL      EMPNO                                                                               
+---------- ----------                                                                               
+      2975       7566                                                                               
+      2450       7782                                                                               
+      1100       7876                                                                               
+      1250       7521                                                                               
+      1500       7844                                                                               
+      1250       7654                                                                               
+      5000       7839                                                                               
+      1300       7934                                                                               
+      1600       7499                                                                               
+      3000       7788                                                                               
+       950       7900                                                                               
+      2850       7698                                                                               
+      3000       7902                                                                               
+       800       7369                                                                               
+
+14 rows selected.
+
+SQL> select sal*12
+  2  from emp;
+
+    SAL*12                                                                                          
+----------                                                                                          
+      9600                                                                                          
+     19200                                                                                          
+     15000                                                                                          
+     35700                                                                                          
+     15000                                                                                          
+     34200                                                                                          
+     29400                                                                                          
+     36000                                                                                          
+     60000                                                                                          
+     18000                                                                                          
+     13200                                                                                          
+     11400                                                                                          
+     36000                                                                                          
+     15600                                                                                          
+
+14 rows selected.
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  select sal*12 as annual_salary
+  2* from emp
+SQL> /
+
+ANNUAL_SALARY                                                                                       
+-------------                                                                                       
+         9600                                                                                       
+        19200                                                                                       
+        15000                                                                                       
+        35700                                                                                       
+        15000                                                                                       
+        34200                                                                                       
+        29400                                                                                       
+        36000                                                                                       
+        60000                                                                                       
+        18000                                                                                       
+        13200                                                                                       
+        11400                                                                                       
+        36000                                                                                       
+        15600                                                                                       
+
+14 rows selected.
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  select sal*12 as "annual_salary"
+  2* from emp
+SQL> /
+
+annual_salary                                                                                       
+-------------                                                                                       
+         9600                                                                                       
+        19200                                                                                       
+        15000                                                                                       
+        35700                                                                                       
+        15000                                                                                       
+        34200                                                                                       
+        29400                                                                                       
+        36000                                                                                       
+        60000                                                                                       
+        18000                                                                                       
+        13200                                                                                       
+        11400                                                                                       
+        36000                                                                                       
+        15600                                                                                       
+
+14 rows selected.
+
+SQL> ed
+Wrote file afiedt.buf
+
+  1  select sal*12 as 'annual_salary'
+  2* from emp
+SQL> /
+select sal*12 as 'annual_salary'
+                 *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> spool off
