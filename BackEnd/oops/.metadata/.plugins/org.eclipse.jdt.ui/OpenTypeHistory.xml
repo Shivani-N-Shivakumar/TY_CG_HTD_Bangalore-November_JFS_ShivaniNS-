@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=Constructor/src&lt;{Father.java[Father" modifiers="1" timestamp="1573542576100"/>
+<typeInfo handle="=local variable/src&lt;{Vehicle.java[Vehicle" modifiers="1" timestamp="1573621347845"/>
+<typeInfo handle="=method overriding/src&lt;{Animal.java[Animal" modifiers="1" timestamp="1573622199070"/>
+<typeInfo handle="=loose coupling/src&lt;{Chips.java[Chips" modifiers="1" timestamp="1573625927787"/>
+<typeInfo handle="=tight coupling/src&lt;{Bank.java[Bank" modifiers="1" timestamp="1573626512988"/>
+<typeInfo handle="=instanceof/src&lt;{Phone.java[Phone" modifiers="1" timestamp="1573629083730"/>
+<typeInfo handle="=FinalMethod/src&lt;{Calculator.java[Calculator" modifiers="1" timestamp="1573709232760"/>
+<typeInfo handle="=FinalClass/src&lt;{Pen.java[Pen" modifiers="17" timestamp="1573709863685"/>
+<typeInfo handle="=abstract/src&lt;{Vehicle.java[Vehicle" modifiers="1025" timestamp="1573711725308"/>
+<typeInfo handle="=abstract/src&lt;{HeroHonda.java[HeroHonda" modifiers="1025" timestamp="1573712338451"/>
+<typeInfo handle="=abstract/src&lt;{Animal.java[Animal" modifiers="1025" timestamp="1573713461857"/>
+<typeInfo handle="=access specifier/src&lt;com.tyss.access.pack1{Student.java[Student" modifiers="1" timestamp="1573797958583"/>
+<typeInfo handle="=typecasting/src&lt;com.tyss.typecasting.pack2{Animal.java[Animal" modifiers="1" timestamp="1573803760276"/>
+<typeInfo handle="=Constructor/C:\/Program Files\/Java\/jdk1.8.0_131\/jre\/lib\/rt.jar&lt;java.lang(Object.class[Object" modifiers="33" timestamp="1573125161669"/>
+<typeInfo handle="=multiplecatch/C:\/Program Files\/Java\/jdk1.8.0_131\/jre\/lib\/rt.jar&lt;java.lang(RuntimeException.class[RuntimeException" modifiers="33" timestamp="1573125161669"/>
+</typeInfoHistroy>

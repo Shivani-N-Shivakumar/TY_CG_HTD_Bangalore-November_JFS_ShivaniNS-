@@ -1,0 +1,32 @@
+package com.capgemini.jdbc.controller;
+
+import java.util.Scanner;
+
+import com.capgemini.jdbc.bean.UserBean;
+import com.capgemini.jdbc.factory.UserfFactory;
+import com.capgemini.jdbc.services.UserServices;
+
+public class InsertUser {
+
+	public static void main(String[] args) {
+		UserServices services=UserfFactory.intanceofUserservices();
+		UserBean user=new UserBean();
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("enter id.....");
+		user.setUserid(Integer.parseInt(sc.nextLine()));
+		System.out.println("enter username.....");
+		user.setUsername(sc.nextLine());
+		System.out.println("enter Email.....");
+		user.setEmail(sc.nextLine());
+		System.out.println("enter password.....");
+		user.setPassword(sc.nextLine());
+		if(services.insertUser(user)) {
+			System.out.println("user inserted......");
+		}else {
+			System.err.println("something went worng");
+		}
+		sc.close();
+	}
+
+}

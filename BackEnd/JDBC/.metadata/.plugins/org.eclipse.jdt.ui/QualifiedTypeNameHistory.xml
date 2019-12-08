@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.mysql.jdbc.Connection"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="com.mysql.jdbc.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.sql.Driver"/>
+<fullyQualifiedTypeName name="com.mysql.jdbc.Statement"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.Statement"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="com.capgemini.jdbc.dao.UserDAOImpl"/>
+<fullyQualifiedTypeName name="com.capgemini.jdbc.services.UserServicesImpl"/>
+<fullyQualifiedTypeName name="com.capgemini.jdbc.dao.UserDAO"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="lombok.Data"/>
+<fullyQualifiedTypeName name="com.capgemini.jdbc.bean.UserBean"/>
+<fullyQualifiedTypeName name="com.capgemini.jdbc.services.UserServices"/>
+<fullyQualifiedTypeName name="com.capgemini.jdbc.factory.UserfFactory"/>
+<fullyQualifiedTypeName name="java.time.Instant"/>
+<fullyQualifiedTypeName name="java.time.Duration"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>

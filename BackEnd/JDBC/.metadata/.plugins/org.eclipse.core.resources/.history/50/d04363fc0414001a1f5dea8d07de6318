@@ -1,0 +1,42 @@
+package com.capgemini.jdbc.services;
+
+import java.util.List;
+
+import com.capgemini.jdbc.bean.UserBean;
+
+public class UserServicesImpl implements UserServices {
+
+	@Override
+	public List<UserBean> getAllUsers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public UserBean userLogin(String username, String password) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean updateUser(int userid, String password, String email) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean deleteUser(int userid, String password) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean insertUser(UserBean user) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	
+
+
+}

@@ -1,0 +1,5 @@
+package com.capgemini.jdbc.controller;
+
+public class DeleteUser {
+
+}
