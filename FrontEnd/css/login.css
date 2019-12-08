@@ -1,0 +1,31 @@
+ul li{
+    list-style: none;
+    display: inline;
+    text-decoration: none;
+}
+ul li a{
+    text-decoration: none;
+    padding: 10px;
+    float: left;
+    margin: auto;
+    
+}
+div{
+    margin-top: 700px;
+    margin: auto;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-bottom: 500px;
+    border: solid;
+    padding: 50px;
+    align-content: center;
+}
+h1{
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+*{
+    background-color: cornflowerblue;
+}
