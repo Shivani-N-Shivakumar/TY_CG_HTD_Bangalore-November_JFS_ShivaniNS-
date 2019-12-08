@@ -1,0 +1,26 @@
+
+ul li{
+    list-style: none;
+    display: inline;
+    text-decoration: none;
+}
+ul li a{
+    text-decoration: none;
+    padding: 10px;
+    float: left;
+    margin: auto;
+    
+}
+img{
+    border-style:solid purple;
+    padding: 10px;
+    box-shadow:10px 10px 8px violet;
+    
+    margin: auto;
+    margin-top:30px;
+
+}
+table tr{
+    margin-right:40px;
+}
+
