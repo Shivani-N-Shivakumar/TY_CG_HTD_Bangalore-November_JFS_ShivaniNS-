@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>LOGIN</legend>
+  first name: <input type="text" name="fname" value="shivani"  minlength="4" maxlength="6" readonly required><br>
+ last name: <input type="text" name="lname" value="shivakumar" disabled required><br>
+    password: <input type="password" name="pwd"  placeholder="enter ur password" required pattern="shivani123"><br>
+       email: <input type="email"><br>
+       url:<input type="url"><br>
+      number: <input type="number" name="" id="" min="10" max="100"><br>
+      range:<input type="range" min="10" max="100"><br>
+<input type="submit" value="submit"> <br>
+        <input type="reset" value="reset"> <br>
+        </fieldset>
+        <fieldset>
+            <legend>OPTIONS</legend>
+        <input type="radio" name="gender" value="male">MALE
+        <input type="radio" name="gender" value="female" checked>FEMALE <br>
+        <input type="checkbox" name="lang" value="java">JAVA <br>
+        <input type="checkbox" name="lang" value="SQL">SQL <br>
+        <input type="checkbox" name="lang" value="webtech">WEB TECHNOLOGY <br>
+        <select name="cartoons" id="">
+            <option value="tom and jerry"> TOM AND JEERY</option>
+            <option value="chota bheem"> chota bheem</option>
+            <option value="doremon">DOREMON</option>
+        </select>
+        
+        <input type="button" value="click here!"><br>
+    </fieldset>
+        <input type="file" name="upload a file " id=""><br>
+        <textarea name="story" id="" cols="30" rows="10">once upon a time</textarea><br>
+        <input list="languages">
+        <datalist id="languages">
+            <option value="kannada">kannada</option>
+            <option value="hindi">hindi</option>
+            <option value="english">english</option>
+            <option value="tamil">tamil</option>
+            <option value="telegu">telegu</option>
+        </datalist><br>
+        <input type="date" name="" id=""><br>
+        <audio controls >
+       <source src="" type="audio/mp3"></audio>
+    </form>
+    
+</body>
+</html>

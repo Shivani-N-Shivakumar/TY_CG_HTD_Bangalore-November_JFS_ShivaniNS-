@@ -1,0 +1,21 @@
+.middlediv 
+         { 
+         float: left; 
+         } 
+         .shi
+         { 
+         float: left; 
+         background-color:gray 
+         } 
+         .vani
+         { 
+         float: left; 
+         } 
+         div{ 
+         padding : 1%; 
+         color: white; 
+         background-color: 009900; 
+         width: 30%; 
+         border: solid black; 
+         margin: 30px;
+         } 
