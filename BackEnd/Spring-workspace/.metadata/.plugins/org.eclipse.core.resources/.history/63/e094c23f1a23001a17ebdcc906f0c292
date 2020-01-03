@@ -1,0 +1,17 @@
+package com.cg.springcore.config;
+
+import org.springframework.context.annotation.Configuration;
+
+import com.cg.springcore.beans.Hello;
+
+@Configuration
+public class BeansConfig {
+
+	public Hello getHello() {
+		Hello hello = new Hello();
+		hello.setMessage("I Love Siri");
+		hello.setCount(1000);
+		return hello;
+	}
+}
+

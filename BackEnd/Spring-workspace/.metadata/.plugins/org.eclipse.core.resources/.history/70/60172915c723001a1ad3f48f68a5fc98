@@ -1,0 +1,5 @@
+package com.cg.springmvc3.controller;
+
+public class SpringController {
+
+}

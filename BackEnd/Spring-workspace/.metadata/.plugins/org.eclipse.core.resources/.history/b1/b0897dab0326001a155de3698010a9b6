@@ -1,0 +1,7 @@
+package com.cg.empmvc.service;
+import com.cg.empmvc.bean.EmployeeBean;
+import com.cg.empmvc.dao.EmployeeDAO;;
+
+public class EmployeeServiceImpl implements EmployeeService{
+
+}

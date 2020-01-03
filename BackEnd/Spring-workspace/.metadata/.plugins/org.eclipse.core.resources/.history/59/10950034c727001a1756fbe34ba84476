@@ -1,0 +1,5 @@
+package com.cg.springrest.dto;
+
+public class EmployeeResponse {
+
+}

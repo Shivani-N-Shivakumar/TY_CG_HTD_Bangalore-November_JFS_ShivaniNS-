@@ -1,0 +1,6 @@
+package com.cg.springcore.beans;
+
+public class Book {
+private String name;
+private Author author;
+}

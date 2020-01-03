@@ -1,0 +1,158 @@
+package com.cg.springrest.controller;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
+import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.cg.springrest.dto.EmployeeBean;
+import com.cg.springrest.dto.EmployeeResponse;
+import com.cg.springrest.service.EmployeeService;
+@RestController
+public class EmployeeController {
+	@Autowired
+ private EmployeeService service;
+	
+	@PostMapping(path="/auth" , produces = MediaType.APPLICATION_JSON_VALUE,consumes = MediaType.APPLICATION_JSON_VALUE)
+	public  EmployeeResponse auth(@RequestBody EmployeeBean bean) {
+		EmployeeBean employeeBean =  service.auth(bean.getEmail(), bean.getPassword());
+		
+		EmployeeResponse response = new EmployeeResponse();
+		if(employeeBean!=null) {
+			response.setStatusCode(201);
+			response.setMessage("success");
+			response.setDescription("Employee found for the credentials");
+			response.setBeans(Arrays.asList(employeeBean));
+		}else {
+			response.setStatusCode(401);
+			response.setMessage("failure");
+			response.setDescription("Credentials invalid");
+		}
+		return response;
+	}
+	
+	@PostMapping(path="/register" , produces = MediaType.APPLICATION_JSON_VALUE,consumes = MediaType.APPLICATION_JSON_VALUE)
+	public EmployeeResponse register(@RequestBody EmployeeBean bean) {
+		return service.register(bean);
+		EmployeeResponse response = new EmployeeResponse();
+		if(employeeBean!=null) {
+			response.setStatusCode(201);
+			response.setMessage("success");
+			response.setDescription("Employee found for the credentials");
+			response.setBeans(Arrays.asList(employeeBean));
+		}else {
+			response.setStatusCode(401);
+			response.setMessage("failure");
+			response.setDescription("Credentials invalid");
+		}
+		return response;EmployeeResponse response = new EmployeeResponse();
+		if(employeeBean!=null) {
+			response.setStatusCode(201);
+			response.setMessage("success");
+			response.setDescription("Employee found for the credentials");
+			response.setBeans(Arrays.asList(employeeBean));
+		}else {
+			response.setStatusCode(401);
+			response.setMessage("failure");
+			response.setDescription("Credentials invalid");
+		}
+		return response;EmployeeResponse response = new EmployeeResponse();
+		if(employeeBean!=null) {
+			response.setStatusCode(201);
+			response.setMessage("success");
+			response.setDescription("Employee found for the credentials");
+			response.setBeans(Arrays.asList(employeeBean));
+		}else {
+			response.setStatusCode(401);
+			response.setMessage("failure");
+			response.setDescription("Credentials invalid");
+		}
+		return response;EmployeeResponse response = new EmployeeResponse();
+		if(employeeBean!=null) {
+			response.setStatusCode(201);
+			response.setMessage("success");
+			response.setDescription("Employee found for the credentials");
+			response.setBeans(Arrays.asList(employeeBean));
+		}else {
+			response.setStatusCode(401);
+			response.setMessage("failure");
+			response.setDescription("Credentials invalid");
+		}
+		return response;EmployeeResponse response = new EmployeeResponse();
+		if(employeeBean!=null) {
+			response.setStatusCode(201);
+			response.setMessage("success");
+			response.setDescription("Employee found for the credentials");
+			response.setBeans(Arrays.asList(employeeBean));
+		}else {
+			response.setStatusCode(401);
+			response.setMessage("failure");
+			response.setDescription("Credentials invalid");
+		}
+		return response;EmployeeResponse response = new EmployeeResponse();
+		if(employeeBean!=null) {
+			response.setStatusCode(201);
+			response.setMessage("success");
+			response.setDescription("Employee found for the credentials");
+			response.setBeans(Arrays.asList(employeeBean));
+		}else {
+			response.setStatusCode(401);
+			response.setMessage("failure");
+			response.setDescription("Credentials invalid");
+		}
+		return response;EmployeeResponse response = new EmployeeResponse();
+		if(employeeBean!=null) {
+			response.setStatusCode(201);
+			response.setMessage("success");
+			response.setDescription("Employee found for the credentials");
+			response.setBeans(Arrays.asList(employeeBean));
+		}else {
+			response.setStatusCode(401);
+			response.setMessage("failure");
+			response.setDescription("Credentials invalid");
+		}
+		return response;
+		EmployeeResponse response = new EmployeeResponse();
+		if(employeeBean!=null) {
+			response.setStatusCode(201);
+			response.setMessage("success");
+			response.setDescription("Employee found for the credentials");
+			response.setBeans(Arrays.asList(employeeBean));
+		}else {
+			response.setStatusCode(401);
+			response.setMessage("failure");
+			response.setDescription("Credentials invalid");
+		}
+		return response;EmployeeResponse response = new EmployeeResponse();
+		if(employeeBean!=null) {
+			response.setStatusCode(201);
+			response.setMessage("success");
+			response.setDescription("Employee found for the credentials");
+			response.setBeans(Arrays.asList(employeeBean));
+		}else {
+			response.setStatusCode(401);
+			response.setMessage("failure");
+			response.setDescription("Credentials invalid");
+		}
+		return response;
+	}
+	
+	@GetMapping(path="/get", produces = MediaType.APPLICATION_JSON_VALUE)
+ public List<EmployeeBean> searchEmployee(String key) {
+	 return service.getEmployees(key);
+ }
+ 
+	@PutMapping(path="/change-password" , produces = MediaType.APPLICATION_JSON_VALUE,consumes = MediaType.APPLICATION_JSON_VALUE)
+ public boolean changePassword(@RequestBody EmployeeBean bean) {
+	return service.changePassword(bean.getId(),bean.getPassword());
+ }
+}

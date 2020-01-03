@@ -1,0 +1,13 @@
+INDEX VERSION 1.131
+C:\Users\DELL\Desktop\Spring-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\45213692.index
+\empspringmvc\src\main\resources
+C:\Users\DELL\Desktop\Spring-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1835881162.index
+\springrest\src\main\resources
+C:\Users\DELL\Desktop\Spring-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3077665436.index
+\empmvc\src\main\java
+C:\Users\DELL\Desktop\Spring-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3420349069.index
+\springmvc3\src\main\java
+C:\Users\DELL\Desktop\Spring-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2865575348.index
+\springrest\src\main\resources
+C:\Users\DELL\Desktop\Spring-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2902724630.index
+\empmvc\src\main\resources

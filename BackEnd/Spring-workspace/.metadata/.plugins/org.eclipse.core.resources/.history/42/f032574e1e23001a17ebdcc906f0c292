@@ -1,0 +1,41 @@
+package com.cg.springcore.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
+
+import com.cg.springcore.beans.Cat;
+import com.cg.springcore.beans.Dog;
+import com.cg.springcore.beans.Hello;
+import com.cg.springcore.beans.Pet;
+
+@Configuration
+public class BeansConfig {
+    
+	@Bean("hello")
+	@Scope("prototype")
+	public Hello getHello() {
+		Hello hello = new Hello();
+		hello.setMessage("I Love Siri");
+		hello.setCount(1000);
+		return hello;
+	}
+	
+	@Bean("dog")
+	public Dog getDog() {
+		return new Dog();
+	}
+	@Bean("cat")
+	public Cat getCat() {
+		return new Cat();
+	}
+	
+	@Bean("pet")
+	public Pet getPet() {
+		Pet pet=new Pet();
+		pet.setName("tuffy");
+		//pet.setAnimal(getDog());
+		return pet;
+	}
+}
+

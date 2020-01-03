@@ -1,0 +1,5 @@
+package com.cg.springmvc3.beans;
+
+public class User {
+
+}

@@ -1,0 +1,5 @@
+package com.cg.springrest.controller;
+
+public class EmployeeControllerAdvice {
+
+}

@@ -1,0 +1,42 @@
+package com.cg.springcore;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.cg.springcore.beans.Animal;
+import com.cg.springcore.beans.Author;
+import com.cg.springcore.beans.Book;
+import com.cg.springcore.beans.Hello;
+import com.cg.springcore.beans.Pet;
+import com.cg.springcore.config.BeansConfig;
+
+public class Annotation {
+	ApplicationContext context = new AnnotationConfigApplicationContext(Book.class);
+	Hello hello=context.getBean(Hello.class);
+	System.out.println("__________________________________");
+	
+	System.out.println(hello.getMessage());
+	System.out.println(hello.getCount());
+	
+	System.out.println("__________________________________");
+	
+	Hello hello1=context.getBean(Hello.class);
+	
+	System.out.println(hello);
+	System.out.println(hello1);
+	System.out.println(hello==hello1);
+	
+	System.out.println("__________________________________");
+	
+	
+	
+	Author author=context.getBean(Author.class);
+	
+
+	System.out.println("__________________________________");
+	
+	Book book=context.getBean(Book.class);
+	System.out.println(book.getName());
+	book.getAuthor();
+}
+}

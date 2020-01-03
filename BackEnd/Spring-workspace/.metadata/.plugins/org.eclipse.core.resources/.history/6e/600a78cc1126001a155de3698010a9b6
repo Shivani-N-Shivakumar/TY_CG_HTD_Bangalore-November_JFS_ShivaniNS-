@@ -1,0 +1,95 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<form action="./Register" method="post">
+<fieldset>
+<legend> Employee Details</legend>
+<table>
+<tr>
+<td>Name:</td>
+<td><input type="text" name="name"></td>
+</tr>
+
+
+<tr>
+<td>Email:</td>
+<td><input type="email" name="email"></td>
+</tr>
+<tr>
+<td>Password:</td>
+<td><input type="password" name="password"></td>
+</tr>
+
+</table>
+</fieldset>
+
+
+
+
+<fieldset>
+<legend>Employee  Address Details1</legend>
+
+<table>
+<tr>
+<td>Address Type:</td>
+
+<td><select name="addType">
+<option>Permanent</option>
+<option>Temp</option></select></td>
+</tr>
+
+
+<tr>
+<td>Address1</td>
+<td><input type="text" name="address1"></td>
+</tr>
+<tr>
+<td>Address2</td>
+<td><input type="text" name="address2"></td>
+</tr>
+
+</table>
+</fieldset>
+
+
+
+<fieldset></fieldset>
+<legend>Employee Temporary Details</legend>
+<table>
+<tr>
+<td>Address</td>
+<td><input type="text" name="address"></td>
+</tr>
+
+
+<tr>
+<td>Address1</td>
+<td><input type="text" name="address1"></td>
+</tr>
+<tr>
+<td>Address2</td>
+<td><input type="text" name="address2"></td>
+</tr>
+<tr>
+<td><input type="button" name="Register" >Register</td>
+</tr>
+</table>
+</form>
+
+
+
+
+
+
+
+4
+</body>
+</html>
